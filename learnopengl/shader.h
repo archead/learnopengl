@@ -83,7 +83,7 @@ public:
         glGetProgramiv(ID, GL_LINK_STATUS, &success);
         if (!success) {
             glGetProgramInfoLog(ID, 512, NULL, infoLog);
-            std::cout << "EROOR::SHADER::PRGRAM::LINKING_FAILED\n" << infoLog << std::endl;
+            std::cout << "EROOR::SHADER::PROGRAM::LINKING_FAILED\n" << infoLog << std::endl;
         }
         
         // delete the shaders as they're linked into our program now and no longer necessary
